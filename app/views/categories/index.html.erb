@@ -3,16 +3,36 @@
 
   <% content_for :title, "Categories" %>
 
-  <h1>Gear Categories</h1>
+  <h1 style="color:aliceblue">Gear Categories</h1>
 
-  <div id="categories">
-    <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+  <div class="container features" style="padding: 20px; margin-top: 20px; margin-bottom: 20px">
+    <div>
+      <%= image_tag('fishing-reel-lock-icon.png', alt: 'Description', style: 'float:left; margin: 20px; width: 10%;')%>
+    </div>
+    <div id="categories">
+      <% @categories.each do |category| %>
+      <%= render category %>
+      <p>
+        <%= link_to "Show this category", category %>
+      </p>
+      <% end %>
+    </div>
+
+    <%= link_to "New category", new_category_path %>
+
+    <%
+=begin%>
+    <h2>Category Search</h2>
+    <%
+=end%>
+    <%= form_with url: categories_path, method: :get, local: true do |form| %>
+    <div class="form-group">
+      <%
+=begin%>
+      <%= form.label :search, "Search Categories" %>
+      <%
+=end%>
+      <%= form.text_field :search, class: 'form-control', placeholder: 'Search Categories' %>
+    </div>
+    <%= form.submit "Search", class: 'btn btn-primary' %>
     <% end %>
-  </div>
-
-  <%= link_to "New category", new_category_path %>
-</div>
