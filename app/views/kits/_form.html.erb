@@ -1,0 +1,42 @@
+<%= form_with(model: kit) do |form| %>
+<% if kit.errors.any? %>
+<div style="color: red">
+  <h2><%= pluralize(kit.errors.count, "error") %> prohibited this kit from being saved:</h2>
+
+  <ul>
+    <% kit.errors.each do |error| %>
+    <li><%= error.full_message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div>
+  <%= form.label :name, style: "display: block" %>
+  <%= form.text_field :name %>
+</div>
+
+<div>
+  <%= form.label :description, style: "display: block" %>
+  <%= form.textarea :description %>
+</div>
+
+<div>
+  <%= form.label :user_id, style: "display: block" %>
+  <%= form.text_field :user_id %>
+</div>
+
+<div>
+  <%= form.submit %>
+</div>
+<div class="mb-3">
+  <%= form.label :items, "Select Items for this Kit" %><br>
+  <%= form.collection_check_boxes(:item_ids, Item.all, :id, :name) do |b| %>
+  <div class="form-check">
+    <%= b.check_box(class: "form-check-input") %>
+    <%= b.label(class: "form-check-label") %>
+  </div>
+  <% end %>
+</div>
+
+<% end %>
