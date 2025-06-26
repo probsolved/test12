@@ -6,6 +6,20 @@ body {
   font-family: "Asap Condensed", sans-serif;
 }
 
+#map {
+  height: 500px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.devise-links a {
+  color: aliceblue;
+}
+
+.devise-links a:hover{
+  color: rgb(145, 197, 244);
+}
+
 .forecast-table, th, td {
   color: black;
   background-color: #ffffff;
@@ -15,6 +29,8 @@ body {
   padding: 5px;
   border-radius: 15px;
 }
+
+
 
 .nav-font {
   color: aliceblue;
