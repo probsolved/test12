@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get "gearlocker", to: "categories#index"
+  get "maps", to: "static_pages#maps"
+  get "tournaments", to: "static_pages#tournaments"
+  get "home", to: "static_pages#home"
+  get "forecast", to: "static_pages#forecast"
   resources :kits
   resources :items
   resources :categories
@@ -9,10 +14,10 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
-   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
-   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
-   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
+  # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
+  # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
+  # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-   # Defines the root path route ("/")
-   root "categories#index"
+  # Defines the root path route ("/")
+  #  root "application#"
 end

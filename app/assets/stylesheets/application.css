@@ -8,4 +8,6 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
- @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
+/* If you need to include Font Awesome, use a valid CSS import: */
+@import "font-awesome/css/font-awesome.css"; 

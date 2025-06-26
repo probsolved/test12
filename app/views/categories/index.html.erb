@@ -3,9 +3,28 @@
 
   <% content_for :title, "Categories" %>
 
-  <h1 style="color:aliceblue">Gear Categories</h1>
+
+  <!-- Insurance Quote Section -->
+  <div class=" mt-5 container features" style="margin-top: 50px; margin-bottom: 50px">
+    <div class="row  container">
+      <%= image_tag "fishing-reel-lock-icon.png", style: "float:left; margin: auto; margin-top:-25px; width:100px;" %></div>
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center" style="margin-top: -60px; margin-bottom: 30px">
+        <h1>Insure Your Gear.<br />Protect Your Keep.</h1>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-4 text-center" style="margin-top: -50px">
+        <p>We can help you get a free insurance quote for your gear locker from our insurance partners. Get started now.</p>
+        <p> <a href="items" class="btn btn-success">Yes! I want a free quote.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- ---------- End of Insurance Quote Section ---------- -->
 
   <div class="container features" style="padding: 20px; margin-top: 20px; margin-bottom: 20px">
+    <h1 style="color:green">Gear Categories</h1>
+
     <div>
       <%= image_tag('fishing-reel-lock-icon.png', alt: 'Description', style: 'float:left; margin: 20px; width: 10%;')%>
     </div>
@@ -36,3 +55,42 @@
     </div>
     <%= form.submit "Search", class: 'btn btn-primary' %>
     <% end %>
+
+    <div class="row">
+      <div class="card" style="margin: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/fishing-reel-lock-icon.png" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">My Gear Categories</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="categories" class="btn btn-primary">View Categories</a>
+        </div>
+      </div>
+      <div class="card" style="margin: 10px; margin-bottom: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/lightning-159507.png" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">My Gear Items</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="items" class="btn btn-primary">My Gear Items</a>
+        </div>
+      </div>
+      <div class="card" style="margin: 10px; margin-bottom: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/locator-1093167.svg" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">My Kits</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="kits" class="btn btn-primary">My Kits</a>
+        </div>
+      </div>
+      <div class="card" style="margin: 10px; margin-bottom: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/locator-1093167.svg" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">Add New Gear</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div>
+        <%= image_tag "keeper-transbg.png", style: "float:right; width:500px; margin-bottom: -50px; margin-right: -50px" %>
+      </div>
+    </div>
+  </div>

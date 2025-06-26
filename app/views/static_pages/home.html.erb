@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet" />
+  <title>The Keeper App</title>
+</head>
+
+<!-- body ------------------------------------------------------->
+
+<body style="background-color: #1f4262">
+  <div class="container asap-condensed-light">
+    <div class="row gameon">
+      <div class="col-md-4">
+        <h1>Game On.<br />Gear Out.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          suscipit urna sollicitudin, aliquet turpis et, sagittis urna. Fusce
+          maximus luctus velit, a sagittis turpis molestie.
+        </p>
+        <!-- login box -->
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+        <!-- end login box -->
+      </div>
+      <div class="col-md-6">
+        <%= image_tag('keeper-transbg.png', alt: 'Keeper App Logo of Fish', style: 'float:right; margin: 20px; margin-bottom: -75px; width: 100%;')%>
+      </div>
+    </div>
+  </div>
+
+  <div class="features container" style="margin-top: 20px;">
+    <h1 style="padding: 20px;">Features</h1>
+    <div class="row">
+      <div class="card" style="margin: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/fishing-reel-lock-icon.png" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">Gear Locker</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="margin: 10px; margin-bottom: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/lightning-159507.png" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">Fishing Forecast</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="./forecast.html" class="btn btn-primary">Get Forecast</a>
+        </div>
+      </div>
+      <div class="card" style="margin: 10px; margin-bottom: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/locator-1093167.svg" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">Maps</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="margin: 10px; margin-bottom: 10px; width: 18rem; padding-top: 5px; padding-left:10px; padding-bottom: 20px">
+        <img src="./assets/locator-1093167.svg" class="card-img-top features-image-size" alt="Gear Locker Icon">
+        <div class="card-body">
+          <h5 class="card-title">Tournaments</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
