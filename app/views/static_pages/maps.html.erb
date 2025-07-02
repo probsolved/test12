@@ -17,4 +17,17 @@
    }).addTo(map);
 
    new L.Control.Geocoder().addTo(map);
+
+   var popup = L.popup();
+
+
+   // Function to handle map click events
+   function onMapClick(e) {
+     popup
+       .setLatLng(e.latlng)
+       .setContent("You clicked the map at " + e.latlng.toString())
+       .openOn(map);
+   }
+
+   map.on('click', onMapClick);
  </script>
